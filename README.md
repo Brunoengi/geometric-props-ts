@@ -384,6 +384,7 @@ Por fim, o resultado no terminal:
 <a href="https://github.com/Brunoengi">Github:</a> <br>
 <a href="https://www.linkedin.com/in/bruno--teixeira/">Linkedin:</a> <br>
 <a href="https://www.instagram.com/b.de_bruno/">Instagram:</a> <br>
+<a href="https://www.youtube.com/channel/UCini8PeSegCCvsCuzZCfKKA">Youtube:</a> <br>
 </p>
 
 <h4>Orientador: Prof. Dr. Mauro de Vasconcellos Real </h4>
