@@ -1,6 +1,6 @@
 <h1>Propriedades Geométricas</h1>
 
-<p>Esta documentação tem o objetivo de contextualizar com relação ao projeto  <i>geometric_props_py</i>. Serão abordados os seguintes tópicos:</p>
+<p>Esta documentação tem o objetivo de contextualizar com relação ao projeto  <i>geometric_props_ts</i>. Serão abordados os seguintes tópicos:</p>
 
 <ol>
   <li>O que é / objetivo do projeto</li>
@@ -16,7 +16,7 @@
 
 
 <h2>1 - O que é / objetivo do projeto</h2>
-<p>O projeto tem como objetivo calcular um conjunto de propriedades geométricas de figuras poligonais inseridas em um plano bidimensional. Nesse projeto, implementa-se uma classe utilizando a linguagem de programação python que abstrai a metodologia utilizada no teorema de green, que transforma integrais de superfície em integrais de linha ao longo de um contorno para assim, calcular as seguintes propriedades geométricas:</p>
+<p>O projeto tem como objetivo calcular um conjunto de propriedades geométricas de figuras poligonais inseridas em um plano bidimensional. Nesse projeto, implementa-se uma classe utilizando a linguagem de programação Javascript que abstrai a metodologia utilizada no teorema de green, que transforma integrais de superfície em integrais de linha ao longo de um contorno para assim, calcular as seguintes propriedades geométricas:</p>
 
 Observação: As unidades disponibilizadas na tabela são válidas quando se insere as coordenadas da figura poligonal em centímetros (cm).
 
@@ -132,11 +132,11 @@ No caso a seguir, queremos representar uma figura retangular com base de 20cm e 
 ```
 const rectangulo = new GeometricProps(
     [
-        {'x':0, 'y':0},           ##ponto 1
-        {'x':20, 'y':0},          ##ponto 2
-        {'x':20, 'y':60},         ##ponto 3
-        {'x':0, 'y':60},          ##ponto 4
-        {'x':0, 'y':0}            ##ponto 5
+        {'x':0, 'y':0},           //ponto 1
+        {'x':20, 'y':0},          //ponto 2
+        {'x':20, 'y':60},         //ponto 3
+        {'x':0, 'y':60},          //ponto 4
+        {'x':0, 'y':0}            //ponto 5
     ])
 ```
   
