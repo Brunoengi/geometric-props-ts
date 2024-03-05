@@ -269,7 +269,6 @@ base: ${rectangulo.base.toFixed(2)} cm,
 <br>
 <br>
 <p>
-A imagem a seguir apresenta o trecho de código para realizar o <code>console.log()</code> e o resultado no terminal:
 </p>
   
 <br>
@@ -304,7 +303,6 @@ const sectionTWithCorbels = new GeometricProps(
 ```
 
 <p>
-A imagem a seguir apresenta o trecho de código para realizar o <code>console()</code> e o resultado no terminal:
 </p>
 
 
@@ -370,8 +368,6 @@ const sectionBox = new GeometricProps(
         {'x':300, 'y':0},
     ])
 ```
-
-Por fim, o resultado no terminal:
 
 
 <h2>7 - Licença de Uso</h2>
