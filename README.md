@@ -220,7 +220,7 @@ const rectangulo = new GeometricProps(
 
 <h3>Acessando cada propriedade geométrica e demais informações</h3>
 
-<p>Abaixo, será apresentado o <code>print()</code> referente a cada uma das propriedades geométricas, a função <code>round()</code> auxilia para que seja apresentado o resultado com 2 casas decimais. </p>
+<p>Abaixo, será apresentado o <code>console.log()</code> referente a cada uma das propriedades geométricas, a função <code>toFixed()</code> auxilia para que seja apresentado o resultado com 2 casas decimais. </p>
 
 ```
 
