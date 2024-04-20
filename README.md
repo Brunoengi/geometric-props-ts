@@ -251,8 +251,7 @@ base: ${rectangulo.base.toFixed(2)} cm,
 
 <h2>5 - Tecnologias Utilizadas</h2>
 
-<p>Typescript </p>
-<p>Javascript </p>
+<p>Javascript com typescript (ES6), deve-se ter suporte a módulos. </p>
 
 <h2>6 - Exemplos </h2>
 
