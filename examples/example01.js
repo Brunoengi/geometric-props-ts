@@ -1,13 +1,13 @@
-import GeometricProps from "../dir/GeometricProps.js";
+import GeometricProps from '../dist/index.js'
 
 const rectangulo = new GeometricProps(
-    [
-        {'x':0, 'y':0},       
-        {'x':20, 'y':0},   
-        {'x':20, 'y':60},         
-        {'x':0, 'y':60},          
-        {'x':0, 'y':0}            
-    ]
+  [
+    { x: 0, y: 0 },
+    { x: 20, y: 0 },
+    { x: 20, y: 60 },
+    { x: 0, y: 60 },
+    { x: 0, y: 0 }
+  ]
 )
 
 console.log(`

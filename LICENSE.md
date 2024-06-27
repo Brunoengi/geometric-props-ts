@@ -1,0 +1,1 @@
+The Creative Common CC BY-NC license is being used in this project. This license allows other people to remix, adapt and create from the work present in this repository, as long as they attribute due authorship or reference in academic works to the authors. However, it is not permitted to use the present code for commercial purposes without the permission of the authors.

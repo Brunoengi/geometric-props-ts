@@ -1,0 +1,28 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "ignorePatterns": ["dist/**/*", "babel.config.js", "jest.config.ts"],
+    "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    },
+    {
+      "files": ["examples/**/*","__tests__/**/*"],
+      "parserOptions": {
+        "project": "./tsconfig.eslint.json"
+      }
+    }
+  ],
+    "extends": ["standard-with-typescript","plugin:jest/recommended"],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+    }
+}

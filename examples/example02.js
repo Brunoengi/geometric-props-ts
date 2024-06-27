@@ -1,21 +1,21 @@
-import GeometricProps from "../dir/GeometricProps.js";
+import GeometricProps from '../dist/index.js'
 
 const sectionTWithCorbels = new GeometricProps(
-    [
-        {'x':30, 'y':0}, 
-        {'x':30, 'y':40},
-        {'x':10, 'y':60},
-        {'x':10, 'y':120},
-        {'x':40, 'y':130},
-        {'x':40, 'y':150},
-        {'x':-40, 'y':150},
-        {'x':-40, 'y':130},
-        {'x':-10, 'y':120},
-        {'x':-10, 'y':60},
-        {'x':-30, 'y':40},
-        {'x':-30, 'y':0},
-        {'x':30, 'y':0},        
-    ]
+  [
+    { x: 30, y: 0 },
+    { x: 30, y: 40 },
+    { x: 10, y: 60 },
+    { x: 10, y: 120 },
+    { x: 40, y: 130 },
+    { x: 40, y: 150 },
+    { x: -40, y: 150 },
+    { x: -40, y: 130 },
+    { x: -10, y: 120 },
+    { x: -10, y: 60 },
+    { x: -30, y: 40 },
+    { x: -30, y: 0 },
+    { x: 30, y: 0 }
+  ]
 )
 
 console.log(`

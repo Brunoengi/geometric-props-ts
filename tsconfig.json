@@ -1,11 +1,26 @@
 {
     "compilerOptions": {
-      "module": "ES6",
+      "target": "ES2017",
+      "allowJs": true,
+      "noEmit": false,
+      "module": "ES2015",
+      "declaration": true,
+      "declarationMap": true,
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
+      "esModuleInterop": true,
       "sourceMap": true,
-      "outDir": "dir"
+      "outDir": "dist",
+      "lib": ["ES6"],
+      "strictNullChecks": true,
+      "resolveJsonModule": true,
+      "moduleResolution": "Bundler",
+      "paths": {
+        "@src/*": ["./src/*"]
+      },
+      "baseUrl": "."
     },
-    "include": ["src/GeometricProps.ts"],
+    "include": ["src/**/*"],
+    "exclude": ["__tests__/**/*"]
   }
