@@ -1,20 +1,19 @@
 {
   "name": "geometric-props",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A library for calculating geometric properties of 2D figures",
   "main": "./dist/index.js",
   "type": "module",
   "files": [
     "dist/**/*"
   ],
-  "readme": "README.npm.md",
   "scripts": {
     "test": "jest",
     "lint": "eslint \"**/*.{ts,tsx}\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Brunoengi/geometric_props_ts"
+    "url": "git+https://github.com/Brunoengi/geometric-props-ts"
   },
   "keywords": [
     "geometric properties",
