@@ -4,7 +4,7 @@
 
 <h1 id='english-title'>Geometric Properties</h1>
 
-<p>This documentation aims to provide context regarding the <i>geometric-props</i> project. The project is also available on github, where complete documentation and examples are provided. To access, <a href="https://github.com/Brunoengi/geometric-props-ts">click here</a>.</p>
+<p>This documentation aims to provide context about the <i>geometric-props</i> project. The project is also available on github, where simplified and complete documentation and examples are provided. To access the complete documentation, <a href="https://github.com/Brunoengi/geometric-props-ts/blob/main/README.complete.md">click here</a>.</p>
 
 <ol>
   <li><a href='#project'>What's the project / project objectives</a></li>
@@ -268,7 +268,7 @@ A partir dessa seção, será apresentada a documentação do projeto em portugu
 
 <h1 id='portuguese-title'>Propriedades Geométricas</h1>
 
-<p>Esta documentação tem o objetivo de contextualizar com relação ao projeto  <i>geometric-props</i>. O projeto está disponibilizado também pelo github, em que é fornecido a documentação completa e exemplos. Para acessar, <a href="https://github.com/Brunoengi/geometric-props-ts">clique aqui</a>. 
+<p>Esta documentação tem o objetivo de contextualizar com relação ao projeto  <i>geometric-props</i>. O projeto está disponibilizado também pelo github, em que é fornecido a documentação simplificada e completa. Para acessar a documentação completa, <a href="https://github.com/Brunoengi/geometric-props-ts/blob/main/README.complete.md">clique aqui</a>. 
 
 <ol>
   <li><a href='#projeto'>O que é / objetivo do projeto</a></li>
