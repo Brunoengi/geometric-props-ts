@@ -3,7 +3,7 @@
         "es2021": true,
         "node": true
     },
-    "ignorePatterns": ["dist/**/*", "babel.config.js", "jest.config.ts"],
+    "ignorePatterns": ["dist/**/*", "babel.config.js", "jest.config.ts", "webpack.config.js"],
     "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -12,7 +12,7 @@
       }
     },
     {
-      "files": ["examples/**/*","__tests__/**/*"],
+      "files": ["examples/**/*","__tests__/**/*","utils/**/*"],
       "parserOptions": {
         "project": "./tsconfig.eslint.json"
       }

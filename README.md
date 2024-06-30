@@ -64,148 +64,15 @@ Note: The units provided in the table are valid when entering the coordinates of
 
 <p>In the following introductory example, we want to calculate the properties of a figure with 4 vertices; this figure does not have a hollow section (its section is solid). Care must be taken with the order in which the vertices are inserted. The first point is marked with the number 1, the second with the number 2, and so on. Note that it is necessary to reinsert the starting point, such that the x and y axis coordinates of the first point and the last point are the same. In the following image, on the left an image is shown that indicates the correct order of insertion of the points, on the right we have an example of a common error which is using the wrong direction when inserting the points.</p>
 
-```
-import GeometricProps from "geometric-props";
-```
 
-<p>The next step is to create an instance of the class, in this case, a vector of objects is expected in the argument, each object must contain the x property, which references the coordinate on the x axis, and must also contain the y property, which references the coordinate on the y axis. Each vertex of the figure is strictly related to a position of the vector, within which an object is contained that requires the position of the vertex in relation to the x-axis and in relation to the y-axis. When instantiating the class, the following structure must be provided:</p>
+<img src='./images/en/correctMeaningen.png' width=500>
 
-In the following case, we want to represent a rectangular figure with a base of 20cm and a height of 60cm, where the lower left corner is located at coordinates (0,0). The following table and figure represent the situation in question:
-
-
-| Point  | Coordinate on x axis | Coordinate on y axis |
-| :---:  | :---:                | :---:                |
-| 1      | 0                    | 0                    |
-| 2      | 20                   | 0                    |
-| 3      | 20                   | 60                   |
-| 4      | 0                    | 60                   |
-| 5      | 0                    | 0                    |
+<br>
+Next, a figure will be presented in which its section is hollowed out, in this case, the order of the points will be:
 
 <br>
 
-<p>After importing the class, you must create an instance and assign it to a variable. In this case, the variable <code>rectangulo</code> will be created and assigned to the instance of the class that expects to receive in its constructor, a vector indicated by <code>[]</code> and each position of this vector must be an object indicated by <code>{}</code>. Within this dictionary, a key set will be inserted, a value that references the axis (x or y) and the reference value.
-</p>
-
-```
-const rectangulo = new GeometricProps(
-    [
-        {'x':0, 'y':0},           //point 1
-        {'x':20, 'y':0},          //point 2
-        {'x':20, 'y':60},         //point 3
-        {'x':0, 'y':60},          //point 4
-        {'x':0, 'y':0}            //point 5
-    ])
-```
-
-<p>After having correctly instantiated a class, it is now possible to access all the properties described in the geometric properties table, each geometric property is a respective property of the class. Next, the name of the class property and its corresponding geometric geometry will be presented.</p>
-
-<h3>Name of the geometric property and respective class property:</h3>
-
-
-<table border="1">
-  <thead>
-  <th>Goemetric Propertie</th>
-    <th>Class Propertie</th>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Section Area (A)</td>
-      <td align="center">rectangulo.A</td>
-    </tr>
-    <tr>
-      <td>Static moment with respect to the x-axis (S<sub>x</sub>)</td>
-      <td align="center">rectangulo.Sx</td>
-    </tr>
-    <tr>
-      <td>Static moment with respect to the y-axis (S<sub>y</sub>)</td>
-      <td align="center">rectangulo.Sy</td>
-    </tr>
-    <tr>
-      <td>Moment of inertia with respect to the x-axis (I<sub>x</sub>)</td>
-      <td align="center">rectangulo.Ix</td>
-    </tr>
-    <tr>
-      <td>Moment of inertia with respect to the y-axis (I<sub>y</sub>)</td>
-      <td align="center">rectangulo.Iy</td>
-    </tr>
-    <tr>
-      <td>Product of inertia with respect to the x and y axes (I<sub>xy</sub>)</td>
-      <td align="center">rectangulo.Ixy</td>
-    </tr>
-    <tr>
-      <td>Centroid of the section relative to the x-axis (x<sub>g</sub>)</td>
-      <td align="center">rectangulo.Xg</td>
-    </tr>
-    <tr>
-      <td>Centroid of the section relative to the y-axis (y<sub>g</sub>)</td>
-      <td align="center">rectangulo.Yg</td>
-    </tr>
-    <tr>
-      <td>Barycentric moment of inertia (with respect to the centroid) on the x-axis (I<sub>xg</sub>)</td>
-      <td align="center">rectangulo.Ixg</td>
-    </tr>
-    <tr>
-      <td>Barycentric moment of inertia (with respect to the centroid) on the y-axis (I<sub>yg</sub>)</td>
-      <td align="center">rectangulo.Iyg</td>
-    </tr>
-    <tr>
-      <td>Product of inertia with respect to the centroid in x and y (I<sub>xyg</sub>)</td>
-      <td align="center">rectangulo.Ixyg</td>
-    </tr>
-    <tr>
-      <td>Vertical distance between the center of gravity and the lowest point along the vertical axis (Y<sub>1</sub>)</td>
-      <td align="center">rectangulo.Y1</td>
-    </tr>
-    <tr>
-      <td>Vertical distance between the highest point along the vertical axis and the center of gravity (Y<sub>2</sub>)</td>
-      <td align="center">rectangulo.Y2</td>
-    </tr>
-    <tr>
-      <td>Resistant modulus, calculated considering Y<sub>1</sub> (W<sub>1</sub>)</td>
-      <td align="center">rectangulo.W1</td>
-    </tr>
-    <tr>
-      <td>Resistant modulus, calculated considering Y<sub>2</sub> (W<sub>2</sub>)</td>
-      <td align="center">rectangulo.W2</td>
-    </tr>
-    <tr>
-      <td>Height (h)</td>
-      <td align="center">rectangulo.height</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Accessing each geometric property and other information</h3>
-
-<p>Below, the <code>console.log()</code> will be presented for each of the geometric properties, the <code>toFixed()</code> function helps to display the result with 2 spaces decimals. </p>
-
-
-```
-console.log(`
-Xmax: ${rectangulo.Xmax.toFixed(2)} cm,
-Xmin: ${rectangulo.Xmin.toFixed(2)} cm,
-Ymax: ${rectangulo.Ymax.toFixed(2)} cm,
-Ymin: ${rectangulo.Ymin.toFixed(2)} cm,
-A: ${rectangulo.A.toFixed(2)} cm²,
-Sx: ${rectangulo.Sx.toFixed(2)} cm³,
-Sy: ${rectangulo.Sy.toFixed(2)} cm³,
-Ix: ${rectangulo.Ix.toFixed(2)} cm⁴,
-Iy: ${rectangulo.Iy.toFixed(2)} cm⁴,
-Ixy: ${rectangulo.Ixy.toFixed(2)} cm⁴,
-Xg: ${rectangulo.Xg.toFixed(2)} cm,
-Yg: ${rectangulo.Yg.toFixed(2)} cm,
-Ixg: ${rectangulo.Ixg.toFixed(2)} cm⁴,
-Iyg: ${rectangulo.Iyg.toFixed(2)} cm⁴,
-Ixyg: ${rectangulo.Ixyg.toFixed(2)} cm⁴,
-Y1: ${rectangulo.Y1.toFixed(2)} cm,
-Y2: ${rectangulo.Y2.toFixed(2)} cm,
-W1: ${rectangulo.W1.toFixed(2)} cm³,
-W2: ${rectangulo.W2.toFixed(2)} cm³,
-height: ${rectangulo.height.toFixed(2)} cm,
-base: ${rectangulo.base.toFixed(2)} cm,
-`)
-```
+<img src='./images/hollowSection.png' width=500>
 
 <br>
 
@@ -228,13 +95,12 @@ In the project, there are 5 folders that will be mentioned later and the documen
 │ ├── interfaces
 │ └── GeometricProps.ts
 ├── __tests__
+│ ├── examples
+│ └── rectangule.ts
 ├── README.MD
 ├── babel.config.js
 ├── jest.config.js
 ```
-
-<h3>Pastas:</h3>
-
 
 <h3>Folders:</h3>
 
@@ -622,7 +488,7 @@ A aplicação permite que se trabalhe com figuras vazadas, mas deve-se atentar a
 
 No exemplo introdutório a seguir, deseja-se calcular as propriedades de uma figura com 4 vértices, essa figura não apresenta seção vazada (sua seção é maciça). Deve-se tomar cuidado com a ordem de inserção dos vértices. O primeiro ponto é marcado com o número 1, o segundo com o número 2 e assim por diante. Nota-se que é necessário reinserir o ponto inicial, de tal forma que a coordenadas do eixo x e y do primeiro ponto e do último ponto são as mesmas. Na imagem a seguir, é apresentado na esquerda uma imagem que indica a ordem correta de inserção dos pontos, já na direita temos um exemplo de um erro comum que é utilizar o sentido errado na inserção dos pontos.
 
-<img src='./images/correctMeaning.png' width=500>
+<img src='./images/pt-br/correctMeaningpt-br.png' width=500>
 
 <br>
 A seguir será apresentada uma figura em que sua seção é vazada, nesse caso, a ordem dos pontos será:
@@ -652,6 +518,8 @@ No projeto, há 5 pastas que serão mencionadas adiante e os arquivos de documen
 │ ├── interfaces
 │ └── GeometricProps.ts
 ├── __tests__
+│ ├── examples
+│ └── rectangule.ts
 ├── README.MD
 ├── babel.config.js
 ├── jest.config.js

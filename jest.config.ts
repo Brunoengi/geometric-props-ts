@@ -11,6 +11,7 @@ const config: Config = {
 
   clearMocks: true,
   collectCoverage: true,
+  collectCoverageFrom: ["src/GeometricProps.{js,jsx,ts,tsx}"],
   coverageDirectory: "coverage",
    coverageProvider: "babel",
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {prefix: '<rootDir>'}),
