@@ -39,5 +39,5 @@ Y2: ${sectionTWithCorbels.Y2.toFixed(2)} cm,
 W1: ${sectionTWithCorbels.W1.toFixed(2)} cm³,
 W2: ${sectionTWithCorbels.W2.toFixed(2)} cm³,
 height: ${sectionTWithCorbels.height.toFixed(2)} cm,
-base: ${sectionTWithCorbels.base.toFixed(2)} cm,
+base: ${sectionTWithCorbels.base.toFixed(2)} cm
 `)

@@ -31,5 +31,5 @@ Y2: ${rectangulo.Y2.toFixed(2)} cm,
 W1: ${rectangulo.W1.toFixed(2)} cm³,
 W2: ${rectangulo.W2.toFixed(2)} cm³,
 height: ${rectangulo.height.toFixed(2)} cm,
-base: ${rectangulo.base.toFixed(2)} cm,
+base: ${rectangulo.base.toFixed(2)} cm
 `)

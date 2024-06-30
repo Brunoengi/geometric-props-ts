@@ -46,5 +46,5 @@ Y2: ${sectionBox.Y2.toFixed(2)} cm,
 W1: ${sectionBox.W1.toFixed(2)} cm³,
 W2: ${sectionBox.W2.toFixed(2)} cm³,
 height: ${sectionBox.height.toFixed(2)} cm,
-base: ${sectionBox.base.toFixed(2)} cm,
+base: ${sectionBox.base.toFixed(2)} cm
 `)

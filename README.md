@@ -97,6 +97,8 @@ In the project, there are 5 folders that will be mentioned later and the documen
 ├── __tests__
 │ ├── examples
 │ └── rectangule.ts
+├── utils
+│ ├── ...
 ├── README.MD
 ├── babel.config.js
 ├── jest.config.js
@@ -114,6 +116,8 @@ In the project, there are 5 folders that will be mentioned later and the documen
 <b>`src:`</b> This folder contains the class for calculating the geometric properties and the respective necessary interfaces, in this case, we have the project in typescript, the class for calculating the geometric properties is GeometricProps.ts
 
 <b>`__tests__:`</b> Folder with the application tests using jest, the tests are configured to work on all files with the ts extension, a script is inserted in the package.json file to run this scan
+
+<b>`utils:`</b> Folder with files containing functions that will be used in various places in the project
 
 <br>
 
@@ -294,6 +298,14 @@ All examples presented in this topic are available in the application, if you ha
 
 <br>
 
+The terminal image is shown below:
+
+<br>
+
+<img src='./images/example1-terminal.png' height=300>
+
+<br>
+
 <h3> 6.2 - T section with corbels</h3>
 
 In this next section, a conventional polygon for prestressed concrete is presented, which is the T section with corbels. In this case we will have the following points:   
@@ -322,6 +334,14 @@ const sectionTWithCorbels = new GeometricProps(
         {'x':30, 'y':0},
     ])
 ```
+<br>
+
+The terminal image is shown below:
+
+<br>
+
+<img src='./images/example2-terminal.png' height=300>
+
 <br>
 
 <h3> 6.3 - Coffin Section</h3>
@@ -386,6 +406,13 @@ const sectionBox = new GeometricProps(
         {'x':300, 'y':0},
     ])
 ```
+
+<br>
+
+The terminal image is shown below:
+
+<br>
+<img src='./images/example3-terminal.png' height=300>
 
 <br>
 
@@ -520,6 +547,8 @@ No projeto, há 5 pastas que serão mencionadas adiante e os arquivos de documen
 ├── __tests__
 │ ├── examples
 │ └── rectangule.ts
+├── utils
+│ ├── ...
 ├── README.MD
 ├── babel.config.js
 ├── jest.config.js
@@ -536,7 +565,9 @@ No projeto, há 5 pastas que serão mencionadas adiante e os arquivos de documen
 
 <b>`src:`</b> Nessa pasta está contido a classe para calcular as propriedades geométricas e as reespectivas interfaces necessárias, nesse caso, temos o projeto em typescript, a classe para o cálculo das propriedades geométricas é GeometricProps.ts
 
-<b>`__tests__:`</b> Pasta com os testes da aplicação utilizando jest, os testes estão configurados para funcionarem em todos os arquivos com extensão ts, no arquivo package.json está inserido um script para a execução dessa varredura
+<b>`__tests__:`</b> Pasta com os testes da aplicação utilizando jest, os testes estão configurados para funcionarem em todos os arquivos com extensão ts, no arquivo package.json está inserido um script para a execução dessa varredura<br>
+
+<b>`utils:`</b> Pasta com arquivos contendo funções que serão utilizadas em vários lugares do projeto
 
 <br>
 
