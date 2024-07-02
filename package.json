@@ -1,6 +1,6 @@
 {
   "name": "geometric-props",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A library for calculating geometric properties of 2D figures",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
