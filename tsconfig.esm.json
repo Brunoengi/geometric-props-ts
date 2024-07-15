@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist/esm",
     "declaration": true,
     "declarationDir": "./dist/types",
-    "resolveJsonModule": true,
     "paths": {
       "@src/*": ["./src/*"]
     },
