@@ -2,6 +2,7 @@
     "compilerOptions": {
       "outDir": "./dist/cjs",
       "module": "CommonJS",
+      "target": "ES2018",
       "declaration": true,
       "esModuleInterop": true,
       "declarationDir": "./dist/types",
