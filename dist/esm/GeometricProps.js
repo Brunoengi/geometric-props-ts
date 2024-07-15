@@ -1,4 +1,7 @@
-export class GeometricProps {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GeometricProps = void 0;
+class GeometricProps {
     _A = 0;
     _Sx = 0;
     _Sy = 0;
@@ -196,3 +199,4 @@ export class GeometricProps {
         return this._base;
     }
 }
+exports.GeometricProps = GeometricProps;
