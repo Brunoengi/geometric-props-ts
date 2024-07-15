@@ -3,6 +3,7 @@
       "outDir": "./dist/cjs",
       "module": "CommonJS",
       "declaration": true,
+      "esModuleInterop": true,
       "declarationDir": "./dist/types",
       "resolveJsonModule": true,
       "paths": {
