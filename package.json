@@ -1,6 +1,6 @@
 {
   "name": "geometric-props",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A library for calculating geometric properties of 2D figures",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -21,9 +21,9 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build:commonjs": "tsc --project tsconfig.cjs.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
-    "build": "npm run build:commonjs && npm run build:esm",
+    "build": "npm run build:cjs && npm run build:esm",
     "test": "jest",
     "lint": "eslint \"**/*.{ts,tsx}\""
   },
