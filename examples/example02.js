@@ -1,4 +1,4 @@
-import GeometricProps from '../dist/index.js'
+import GeometricProps from '../dist/esm/index.js'
 
 const sectionTWithCorbels = new GeometricProps(
   [

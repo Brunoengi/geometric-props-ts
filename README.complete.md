@@ -129,7 +129,7 @@ In this project, we are using <i>barrel export</i> which means all files can be 
 The first step to running the application is to import the class contained in the <i>geometricProps.js</i> file, also available through the index.js file. For example, if the class instance is contained in the examples folder, you must insert:
 
 ```
-import GeometricProps from "../dist/index.js";
+import GeometricProps from '../dist/esm/index.js'
 ```
 
 The next step is to create an instance of the class, in this case, no arguments from a vector of objects are expected, each object must contain the x property, which references the coordinate on the x axis, and must also contain the y property, which does coordinate reference on the y axis. Each vertex of the figure is related to a position in the vector, which contains an object that requires the position of the vertex in relation to the x-axis and in relation to the y-axis. When instantiating a class, the following structure must be provided:
@@ -579,7 +579,7 @@ Nesse projeto, estamos usando <i>barrel export</i>, o que significa que todos os
 O primeiro passo para executar a aplicação é realizar a importação da classe contida no arquivo <i>geometricProps.js</i> também disponível através do arquivo index.js. Exemplificando caso a instância da classe esteja contida na pasta exemplos (exemples) deve-se inserir:
 
 ```
-import GeometricProps from "../dist/index.js";
+import GeometricProps from '../dist/esm/index.js'
 ```
 
 A próxima etapa é criar uma instância da classe, nesse caso, é esperado no argumento um vetor de objetos, cada objeto deve contar a propriedade x, que faz referência a coordenada no eixo x, e deve conter também a propriedade y, que faz referência a coordenada no eixo y. Cada vértice da figura está estritamente relacionado a uma posição do vetor, em que dentro está contido um objeto que necessita da possição do vértice em relação ao eixo x e em relação ao eixo y. Ao instanciar a classe, a seguinte estrutura deve ser fornecida:

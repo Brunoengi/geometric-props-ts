@@ -67,4 +67,3 @@ declare class GeometricProps implements IGeometricProps {
     get base(): number;
 }
 export default GeometricProps;
-//# sourceMappingURL=GeometricProps.d.ts.map

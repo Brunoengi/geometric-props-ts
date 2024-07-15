@@ -13,7 +13,7 @@ const config: Config = {
   collectCoverage: true,
   collectCoverageFrom: ["src/GeometricProps.{js,jsx,ts,tsx}"],
   coverageDirectory: "coverage",
-   coverageProvider: "babel",
+  coverageProvider: "babel",
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {prefix: '<rootDir>'}),
    preset: 'ts-jest',
    testMatch: [

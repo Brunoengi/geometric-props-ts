@@ -28,7 +28,7 @@ export function basicRectangleFromAnyPoint(beginx: number, endx: number, beginy:
   ])
 }
 
-export function rectanguleScalex (multiplyx: number) {
+export function rectanguleScalex (multiplyx: number): GeometricProps {
   return new GeometricProps([
     { x: 0, y: 0 },
     { x: 1, y: 0 },
@@ -42,11 +42,10 @@ export function rectanguleScalex (multiplyx: number) {
     { x: multiplyx, y: 1 },
     { x: multiplyx, y: 0 },
     { x: 1, y: 0 },
-    { x: 0, y: 0 } 
+    { x: 0, y: 0 }
   ])
 }
 
-
 export function getKeys<T extends object>() {
-  return Object.keys({} as T) as Array<keyof T>;
+  return Object.keys({} as T) as Array<keyof T>
 }
