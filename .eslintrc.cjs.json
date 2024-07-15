@@ -1,0 +1,28 @@
+{
+  "env": {
+      "es2021": true,
+      "node": true
+  },
+  "ignorePatterns": ["dist/**/*", "babel.config.js", "jest.config.ts", "webpack.config.js"],
+  "overrides": [
+  {
+    "files": ["*.ts", "*.tsx"],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  },
+  {
+    "files": ["examples/**/*","__tests__/**/*","utils/**/*"],
+    "parserOptions": {
+      "project": "./tsconfig.eslint.json"
+    }
+  }
+],
+  "extends": ["standard-with-typescript","plugin:jest/recommended"],
+  "parserOptions": {
+      "project": "./tsconfig.cjs.json",
+      "sourceType": "scripts"
+  },
+  "rules": {
+  }
+}

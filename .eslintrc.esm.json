@@ -21,6 +21,7 @@
     "extends": ["standard-with-typescript","plugin:jest/recommended"],
     "parserOptions": {
         "ecmaVersion": "latest",
+        "project": "./tsconfig.esm.json",
         "sourceType": "module"
     },
     "rules": {

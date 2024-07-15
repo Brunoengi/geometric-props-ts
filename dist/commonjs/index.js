@@ -14,7 +14,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = void 0;
+exports.GeometricProps = void 0;
 var GeometricProps_js_1 = require("./GeometricProps.js");
-Object.defineProperty(exports, "default", { enumerable: true, get: function () { return GeometricProps_js_1.default; } });
+Object.defineProperty(exports, "GeometricProps", { enumerable: true, get: function () { return GeometricProps_js_1.default; } });
 __exportStar(require("./interfaces/IGeometricProps.js"), exports);
