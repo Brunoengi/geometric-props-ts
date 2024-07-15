@@ -1,4 +1,4 @@
-import { GeometricProps } from '../dist/esm/index.js'
+import { GeometricProps } from '../dist/esm/index.mjs'
 
 const rectangulo = new GeometricProps(
   [
