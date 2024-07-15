@@ -1,6 +1,6 @@
 {
   "name": "geometric-props",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "A library for calculating geometric properties of 2D figures",
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.mjs",
