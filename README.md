@@ -69,7 +69,7 @@ npm install geometric-props
 Import the class:
 
 ```
-import GeometricProps from "geometric-props"
+import { GeometricProps } from "geometric-props"
 ```
 
 <p>The next step is to create an instance of the class, in this case, a vector of objects is expected in the argument, each object must contain the x property, which references the coordinate on the x axis, and must also contain the y property, which references the coordinate on the y axis. Each vertex of the figure is strictly related to a position of the vector, within which an object is contained that requires the position of the vertex in relation to the x-axis and in relation to the y-axis. When instantiating the class, the following structure must be provided:</p>
@@ -231,7 +231,7 @@ npm install geometric-props
 The second step is to import the module into your preferred file:
 
 ```
-import GeometricProps from "geometric-props"
+import { GeometricProps } from "geometric-props"
 ```
 
 The third step is to instantiate the class, inserting the coordinates of the vertices, for more examples besides those demonstrated in the introduction, access the complete documentation on github, to access, <a href="https://github.com/Brunoengi/geometric-props-ts" >click here</a>
@@ -333,7 +333,7 @@ npm install geometric-props
 Importe a classe:
 
 ```
-import GeometricProps from "geometric-props"
+import { GeometricProps } from "geometric-props"
 ```
 
 <p>A próxima etapa é criar uma instância da classe, nesse caso, é esperado no argumento um vetor de objetos, cada objeto deve contar a propriedade x, que faz referência a coordenada no eixo x, e deve conter também a propriedade y, que faz referência a coordenada no eixo y. Cada vértice da figura está estritamente relacionado a uma posição do vetor, em que dentro está contido um objeto que necessita da possição do vértice em relação ao eixo x e em relação ao eixo y. Ao instanciar a classe, a seguinte estrutura deve ser fornecida:</p>
@@ -492,7 +492,7 @@ npm install geometric-props
 O segundo passo é fazer a importação do módulo no seu arquivo de preferência:
 
 ```
-import GeometricProps from "geometric-props"
+import { GeometricProps } from "geometric-props"
 ```
 
 O terceiro passo é instanciar a classe, inserindo as coordenada dos vértices, para mais exemplos além dos demonstrados na introdução, acesse a documentação completa pelo github, para acessar, <a href="https://github.com/Brunoengi/geometric-props-ts">clique aqui</a>
