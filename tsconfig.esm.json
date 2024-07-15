@@ -4,7 +4,6 @@
     "moduleResolution": "Node",
     "outDir": "./dist/esm",
     "declaration": true,
-    "declarationDir": "./dist/types",
     "paths": {
       "@src/*": ["./src/*"]
     },

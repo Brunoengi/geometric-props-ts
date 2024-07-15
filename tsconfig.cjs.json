@@ -5,7 +5,6 @@
       "target": "ES2018",
       "declaration": true,
       "esModuleInterop": true,
-      "declarationDir": "./dist/types",
       "resolveJsonModule": true,
       "paths": {
         "@src/*": ["./src/*"]
