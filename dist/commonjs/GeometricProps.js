@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.GeometricProps = void 0;
 var GeometricProps = /** @class */ (function () {
     function GeometricProps(vector) {
         this._A = 0;
@@ -274,4 +275,4 @@ var GeometricProps = /** @class */ (function () {
     });
     return GeometricProps;
 }());
-exports.default = GeometricProps;
+exports.GeometricProps = GeometricProps;

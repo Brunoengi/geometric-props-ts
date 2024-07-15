@@ -1,2 +1,2 @@
-export { default as GeometricProps } from './GeometricProps.js'
-export * from './interfaces/IGeometricProps.js'
+export { GeometricProps } from './GeometricProps.js'
+

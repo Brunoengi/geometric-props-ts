@@ -272,4 +272,4 @@ var GeometricProps = /** @class */ (function () {
     });
     return GeometricProps;
 }());
-export default GeometricProps;
+export { GeometricProps };

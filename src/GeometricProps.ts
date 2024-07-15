@@ -1,6 +1,6 @@
 import { type IBidimensionalPoint, type IGreenTheoremLine, type IGeometricProps } from './interfaces/IGeometricProps.js'
 
-class GeometricProps implements IGeometricProps {
+export class GeometricProps implements IGeometricProps {
   private _A: number = 0
   private _Sx: number = 0
   private _Sy: number = 0
@@ -247,4 +247,3 @@ class GeometricProps implements IGeometricProps {
   }
 }
 
-export default GeometricProps
