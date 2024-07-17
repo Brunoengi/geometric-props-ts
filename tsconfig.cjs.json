@@ -2,6 +2,10 @@
     "compilerOptions": {
       "outDir": "./dist/cjs",
       "module": "CommonJS",
+      "typeRoots": [
+      "./node_modules/@types",
+      "./interfaces"
+    ],
       "target": "ES2018",
       "declaration": true,
       "esModuleInterop": true,

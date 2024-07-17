@@ -9,11 +9,14 @@ function updateToMJS(filePath) {
       return;
     }
 
-    const updatedData = data
-      .replace(/(import .*? from '.*?)(\.js)(';?)/g, '$1.mjs$3')
-      .replace(/(export .*? from '.*?)(\.js)(';?)/g, '$1.mjs$3');
+    // Verifica se o arquivo está na pasta 'interfaces'
+    if (!filePath.includes(path.join('interfaces'))) {
+      data = data
+        .replace(/(import .*? from '.*?)(\.js)(';?)/g, '$1.mjs$3')
+        .replace(/(export .*? from '.*?)(\.js)(';?)/g, '$1.mjs$3');
+    }
 
-    fs.writeFile(filePath, updatedData, 'utf8', (err) => {
+    fs.writeFile(filePath, data, 'utf8', (err) => {
       if (err) {
         console.error(`Erro ao escrever o arquivo ${filePath}:`, err);
       } else {
@@ -31,11 +34,14 @@ function updateToCJS(filePath) {
       return;
     }
 
-    const updatedData = data
-      .replace(/(require\(.*?)(\.js)(.*?\))/g, '$1.cjs$3')
-      .replace(/(module\.exports = require\(.*?)(\.js)(.*?\))/g, '$1.cjs$3');
+    // Verifica se o arquivo está na pasta 'interfaces'
+    if (!filePath.includes(path.join('interfaces'))) {
+      data = data
+        .replace(/(require\(.*?)(\.js)(.*?\))/g, '$1.cjs$3')
+        .replace(/(module\.exports = require\(.*?)(\.js)(.*?\))/g, '$1.cjs$3');
+    }
 
-    fs.writeFile(filePath, updatedData, 'utf8', (err) => {
+    fs.writeFile(filePath, data, 'utf8', (err) => {
       if (err) {
         console.error(`Erro ao escrever o arquivo ${filePath}:`, err);
       } else {

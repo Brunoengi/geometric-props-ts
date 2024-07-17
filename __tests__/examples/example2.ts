@@ -1,4 +1,4 @@
-import GeometricProps from '../../src/GeometricProps'
+import { GeometricProps }  from '../../src/GeometricProps'
 import { type IGeometricProps } from '../../src/interfaces/IGeometricProps'
 import { reduceGeometricProp } from '../../utils/testFunctions'
 

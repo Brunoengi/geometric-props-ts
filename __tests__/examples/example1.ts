@@ -1,4 +1,4 @@
-import GeometricProps from '../../src/GeometricProps'
+import { GeometricProps }  from '../../src/GeometricProps'
 import { type IGeometricProps } from '../../src/interfaces/IGeometricProps'
 
 describe('Example 1 - Rectangulo with base = 20cm and height = 60cm', () => {

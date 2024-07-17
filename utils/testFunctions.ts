@@ -1,4 +1,4 @@
-import GeometricProps from '../src/GeometricProps'
+import { GeometricProps } from '../src/GeometricProps'
 import { type IGeometricProps } from '../src/interfaces/IGeometricProps'
 
 export function reduceGeometricProp (figures: IGeometricProps[], propertie: keyof IGeometricProps): number {

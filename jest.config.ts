@@ -3,9 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import { compilerOptions } from './tsconfig.json'
 import type { Config } from 'jest'
-import { pathsToModuleNameMapper } from 'ts-jest';
 
 const config: Config = {
 
@@ -14,7 +12,6 @@ const config: Config = {
   collectCoverageFrom: ["src/GeometricProps.{js,jsx,ts,tsx}"],
   coverageDirectory: "coverage",
   coverageProvider: "babel",
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {prefix: '<rootDir>'}),
    preset: 'ts-jest',
    testMatch: [
     "**/__tests__/**/*.[jt]s?(x)",

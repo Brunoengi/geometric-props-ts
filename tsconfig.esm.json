@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./interfaces"
+    ],
     "module": "ESNext",
     "moduleResolution": "Node",
     "outDir": "./dist/esm",
