@@ -8,10 +8,8 @@
       "./node_modules/@types",
       "./interfaces"
     ],
-    /* Geração de Declarações */
-    "declaration": true,
-    "declarationMap": true,
-    "declarationDir": "./dist/types",
+    "declaration": false,
+    "declarationMap": false,
     /* Interoperabilidade */
     "esModuleInterop": true,
     "resolveJsonModule": true,

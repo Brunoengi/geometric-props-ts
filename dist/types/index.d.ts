@@ -1,3 +1,3 @@
-export { GeometricProps } from './GeometricProps';
-export * from './interfaces/IGeometricProps';
+export { GeometricProps } from './GeometricProps.js';
+export * from './interfaces/IGeometricProps.js';
 //# sourceMappingURL=index.d.ts.map

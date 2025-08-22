@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Opções Básicas para o Contexto do Projeto */
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Opções para Aliases de Caminho */
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+
+    /* Opções de Geração de Tipos */
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true, // ESSENCIAL: Gera apenas os arquivos .d.ts, ignorando os .js
+    "declarationDir": "./dist/types" // Diretório de saída para os tipos
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

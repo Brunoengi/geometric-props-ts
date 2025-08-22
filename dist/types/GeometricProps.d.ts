@@ -1,4 +1,4 @@
-import { type IBidimensionalPoint, type IGeometricProps } from './interfaces/IGeometricProps';
+import { type IBidimensionalPoint, type IGeometricProps } from './interfaces/IGeometricProps.js';
 export declare class GeometricProps implements IGeometricProps {
     private _A;
     private _Sx;

@@ -1,26 +1,32 @@
 {
   "name": "geometric-props",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "A library for calculating geometric properties of 2D figures",
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.mjs",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.cjs"
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
     }
   },
   "files": [
     "dist/**/*"
   ],
   "scripts": {
+    
     "clean": "rimraf dist",
-    "postbuild": "node ./utils/postbuild.mjs",
+    "build:types": "tsc -p tsconfig.types.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run postbuild",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:types",
     "test": "jest",
     "lint": "eslint \"**/*.{ts,tsx}\""
   },
