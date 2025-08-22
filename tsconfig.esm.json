@@ -1,18 +1,25 @@
 {
   "compilerOptions": {
-    "resolveJsonModule": true,
+    "outDir": "./dist/esm",
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "node",
     "typeRoots": [
       "./node_modules/@types",
       "./interfaces"
     ],
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "outDir": "./dist/esm",
+    /* Geração de Declarações */
     "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist/types",
+    /* Interoperabilidade */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    /* Aliases */
     "paths": {
       "@src/*": ["./src/*"]
     },
     "baseUrl": "."
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*"]
 }

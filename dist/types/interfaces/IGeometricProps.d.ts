@@ -48,3 +48,4 @@ export interface IGreenTheoremLine {
     dx: number;
     dy: number;
 }
+//# sourceMappingURL=IGeometricProps.d.ts.map

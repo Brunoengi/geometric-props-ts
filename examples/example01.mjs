@@ -1,14 +1,14 @@
 import { GeometricProps } from '../dist/esm/index.mjs'
 
-const rectangulo = new GeometricProps(
-  [
-    { x: 0, y: 0 },
-    { x: 20, y: 0 },
-    { x: 20, y: 60 },
-    { x: 0, y: 60 },
-    { x: 0, y: 0 }
-  ]
-)
+const rectanglePoints = [
+  { x: 0, y: 0 },
+  { x: 20, y: 0 },
+  { x: 20, y: 60 },
+  { x: 0, y: 60 },
+  { x: 0, y: 0 }
+]
+
+const rectangulo = new GeometricProps(rectanglePoints)
 
 console.log(`
 Xmax: ${rectangulo.Xmax.toFixed(2)} cm,

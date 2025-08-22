@@ -1,2 +1,2 @@
-export { GeometricProps } from './GeometricProps.mjs';
-export * from './interfaces/IGeometricProps.mjs';
+export { GeometricProps } from './GeometricProps.js';
+export * from './interfaces/IGeometricProps.js';

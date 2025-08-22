@@ -15,6 +15,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GeometricProps = void 0;
-var GeometricProps_js_1 = require("./GeometricProps.cjs");
+var GeometricProps_js_1 = require("./GeometricProps.js");
 Object.defineProperty(exports, "GeometricProps", { enumerable: true, get: function () { return GeometricProps_js_1.GeometricProps; } });
-__exportStar(require("./interfaces/IGeometricProps.cjs"), exports);
+__exportStar(require("./interfaces/IGeometricProps.js"), exports);

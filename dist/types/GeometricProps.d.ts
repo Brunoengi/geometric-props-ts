@@ -1,4 +1,4 @@
-import { type IBidimensionalPoint, type IGeometricProps } from './interfaces/IGeometricProps.js';
+import { type IBidimensionalPoint, type IGeometricProps } from './interfaces/IGeometricProps';
 export declare class GeometricProps implements IGeometricProps {
     private _A;
     private _Sx;
@@ -66,3 +66,4 @@ export declare class GeometricProps implements IGeometricProps {
     get height(): number;
     get base(): number;
 }
+//# sourceMappingURL=GeometricProps.d.ts.map
